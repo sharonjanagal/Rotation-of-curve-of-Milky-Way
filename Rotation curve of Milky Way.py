@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+
 
 
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[53]:
+
 
 
 import numpy as np
@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 from scipy.signal import find_peaks 
 
 
-# In[54]:
+
 
 
 #listing the galactic longitudes for which observations are taken
@@ -24,14 +24,14 @@ gal_long = [92.3, 84.9, 79.9, 74.8, 72.7, 66.6, 64.8, 54.8, 49.8, 44.8, 39.8, 34
 v_max_list = []
 
 
-# In[55]:
+
 
 
 #range of file nams of observed data
 ids = range(38885,38898+1)
 
 
-# In[56]:
+
 
 
 #analyzing the data 
@@ -61,7 +61,7 @@ for i in ids:
     v_max_list.append(vel_max)
 
 
-# In[57]:
+
 
 
 
@@ -71,7 +71,6 @@ print('The vel_max at different galactic longitudes are: ', v_max_list)
     
 
 
-# In[76]:
 
 
 from astropy import units as u
@@ -95,7 +94,7 @@ plt.show()
 
 
 
-# In[89]:
+
 
 
 r = R/(1*u.kiloparsec)
@@ -118,7 +117,7 @@ plt.title('$Rotation $ $ curve $ $ of $ $ Milky $ $ Way$')
 plt.show()
 
 
-# In[ ]:
+
 
 
 
